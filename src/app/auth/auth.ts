@@ -1,4 +1,4 @@
-export interface Users {
+export interface Auth {
   accessToken: string;
   user: {
     email: string;
