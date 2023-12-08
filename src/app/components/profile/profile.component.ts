@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Auth } from 'src/app/auth/auth';
+import { User } from 'src/app/module/users';
 import { MovieService } from 'src/app/service/movie.service';
 
 @Component({
@@ -10,10 +11,9 @@ import { MovieService } from 'src/app/service/movie.service';
 export class ProfileComponent implements OnInit {
   constructor(private movieSrv: MovieService) {}
 
-  user!: Auth | null;
+  user!: User | undefined;
 
   ngOnInit(): void {
-    this.user = this.movieSrv.getUserInfo();
-    console.log(this.user?.user.password);
+    this.user = this.movieSrv.getUserInfo()?.user;
   }
 }
