@@ -11,7 +11,9 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   constructor(private authSrv: AuthService, private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.authSrv.restore();
+  }
 
   onSubmit(form: NgForm) {
     console.log(form.value);
