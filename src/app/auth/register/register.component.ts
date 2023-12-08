@@ -14,7 +14,6 @@ export class RegisterComponent implements OnInit {
   constructor(private authSrv: AuthService, private router: Router) {}
 
   ngOnInit(): void {
-    this.authSrv.restore();
     this.registerForm = new FormGroup({
       name: new FormControl(null, Validators.required),
       email: new FormControl(null, [Validators.required, Validators.email]),
