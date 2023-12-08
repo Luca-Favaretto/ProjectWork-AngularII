@@ -25,8 +25,6 @@ export class AuthGuard implements CanActivate {
     return this.authSrv.user$.pipe(
       take(1),
       map((utente) => {
-        console.log('valore di ' + utente);
-
         if (utente) {
           return true;
         }

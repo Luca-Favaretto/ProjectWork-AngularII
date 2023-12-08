@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/auth/auth.service';
+import { Auth } from 'src/app/auth/auth';
+import { MovieService } from 'src/app/service/movie.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,12 @@ import { AuthService } from 'src/app/auth/auth.service';
   styleUrls: ['./profile.component.scss'],
 })
 export class ProfileComponent implements OnInit {
-  constructor(private authSrv: AuthService) {}
+  constructor(private movieSrv: MovieService) {}
+
+  user!: Auth | null;
 
   ngOnInit(): void {
-    this.authSrv.restore();
+    this.user = this.movieSrv.getUserInfo();
+    console.log(this.user?.user.password);
   }
 }

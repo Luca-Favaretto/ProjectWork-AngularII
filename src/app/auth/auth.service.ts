@@ -37,7 +37,6 @@ export class AuthService {
       this.router.navigate(['/login']);
       return;
     }
-    console.log('restore');
     const userData: Auth = JSON.parse(user);
     if (this.jwtHelper.isTokenExpired(userData.accessToken)) {
       this.router.navigate(['/login']);

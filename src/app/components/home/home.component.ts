@@ -33,14 +33,11 @@ export class HomeComponent implements OnInit {
   addoRem(movieId: number) {
     if (this.isFavorite(movieId)) {
       let val: any = this.favorite.find((movie) => movie.movieId === movieId);
-
-      console.log('rimuovo' + val.id);
       if (val) {
         this.removeFavorite(val.id);
       }
     } else {
       this.addFavorite(movieId);
-      console.log('aggiungo');
     }
   }
 
