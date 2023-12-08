@@ -16,15 +16,10 @@ export class HomeComponent implements OnInit {
   constructor(private movieSrv: MovieService, private authSrv: AuthService) {}
 
   ngOnInit(): void {
-    this.authSrv.restore();
     this.userId = this.movieSrv.getUserId();
     this.movieSrv.getMovie().subscribe((movie: Movie[]) => {
       this.movies = movie;
-      console.log(this.movies);
-      this.movieSrv.getFavorite().subscribe((favorite: Favorite[]) => {
-        this.favorite = favorite;
-        console.log(this.favorite);
-      });
+      this.getFavorite();
     });
   }
 
@@ -51,19 +46,23 @@ export class HomeComponent implements OnInit {
 
   removeFavorite(id: number) {
     this.movieSrv.removeFavorite(id).subscribe(() => {
-      this.movieSrv.getFavorite().subscribe((favorite: Favorite[]) => {
-        this.favorite = favorite;
-      });
+      this.getFavorite();
     });
   }
   addFavorite(movieId: number) {
     this.movieSrv
       .addFavorite(movieId, this.userId)
       .subscribe((favorite: Favorite) => {
-        this.movieSrv.getFavorite().subscribe((favorite: Favorite[]) => {
-          this.favorite = favorite;
-          console.log('add2');
-        });
+        this.getFavorite();
       });
+  }
+
+  getFavorite() {
+    this.movieSrv.getFavorite().subscribe((favorite: Favorite[]) => {
+      let userFavorite: Favorite[] = favorite.filter(
+        (movie) => movie.userId === this.userId
+      );
+      this.favorite = userFavorite;
+    });
   }
 }
