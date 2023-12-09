@@ -1,5 +1,5 @@
 :host {
-  height: calc(100vh - 56px);
+  height: calc(100vh - 62px);
   background-color: var(--colore-background);
   display: flex;
   justify-content: center;
@@ -22,7 +22,7 @@
       }
       button {
         background-color: var(--colore-button);
-        color: var(--colore-testo);
+        color: var(--colore-background);
         border: 0px;
       }
     }

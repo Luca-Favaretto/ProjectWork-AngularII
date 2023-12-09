@@ -14,14 +14,12 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(form: NgForm) {
-    console.log(form.value);
     try {
       this.authSrv.login(form.value).subscribe((response) => {
         localStorage.setItem('token', response.accessToken);
       });
     } catch (error) {
       alert('Login errato!');
-      console.log(error);
       this.router.navigate(['/login']);
     }
   }

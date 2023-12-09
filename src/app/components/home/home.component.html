@@ -1,17 +1,17 @@
 <div class="container-lg">
   <div class="row">
     <div
-      class="col-12 col-md-6 col-lg-4 col-xl-3 mb-2"
+      class="col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 mb-2"
       *ngFor="let movie of movies"
     >
-      <div class="card border-radius">
+      <div class="card border-radius h-100">
         <img
           src="http://image.tmdb.org/t/p/w500{{ movie.poster_path }}"
-          class="card-img-top rounded"
+          class="card-img-top rounded h-100"
           alt="img film"
         />
         <a
-          class="position-absolute bottom-0 ms-1 fs-3"
+          class="position-absolute bottom-0 ms-2 fs-3"
           (click)="addoRem(movie.id)"
           [ngStyle]="{
             color: isFavorite(movie.id)
