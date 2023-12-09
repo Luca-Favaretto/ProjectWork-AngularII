@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-lg">
   <div class="row">
     <div
       class="col-12 col-md-6 col-lg-4 col-xl-3 mb-2"
@@ -7,13 +7,13 @@
       <div class="card border-radius">
         <img
           src="http://image.tmdb.org/t/p/w500{{ movie.poster_path }}"
-          class="card-img-top"
+          class="card-img-top rounded"
           alt="img film"
         />
         <a
           class="position-absolute bottom-0 ms-1 fs-3"
           (click)="addoRem(movie.id)"
-          [ngStyle]="{ color: isFavorite(movie.id) ? 'red' : 'white' }"
+          [ngStyle]="{ color: isFavorite(movie.id) ? 'brown' : 'white' }"
           ><i class="fas fa-heart"></i
         ></a>
       </div>

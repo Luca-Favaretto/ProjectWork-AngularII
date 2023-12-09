@@ -1,6 +1,6 @@
 <div class="position-sticky top-0 z-1">
   <nav class="navbar navbar-expand-lg">
-    <div class="container">
+    <div class="container-lg">
       <img
         src="../../../assets/logo-testo-bianco.png"
         alt="Logo"
@@ -55,7 +55,7 @@
             >
           </li>
           <li>
-            <a *ngIf="utente" class="nav-link">
+            <a *ngIf="utente" class="nav-link fw-bold">
               Welcome back {{ utente.user.name }}!
             </a>
           </li>
@@ -63,7 +63,7 @@
 
         <button
           type="button"
-          class="btn ms-auto"
+          class="btn ms-auto fw-bold"
           *ngIf="utente"
           (click)="logout()"
         >
