@@ -1,9 +1,20 @@
 :host {
   > div {
-    background-color: brown;
+    background-color: var(--colore-navbar);
     nav {
+      height: 62px;
+      li {
+        font-size: 1.2em;
+        a {
+          color: var(--color-text);
+        }
+      }
       button {
-        background-color: chocolate;
+        background-color: var(--colore-button);
+
+        color: var(--color-text);
+
+        font-size: 0.8em;
       }
     }
   }

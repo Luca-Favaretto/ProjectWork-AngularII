@@ -1,2 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+:root {
+  --colore-background: #151833;
+  --colore-testo: #c0bcb5;
+  --colore-navbar: #190027;
+  --colore-li-snavbar: #c0bcb5;
+  --colore-titol: #0f3033;
+  --colore-button: #1d4348;
+  --colore-div: #270037;
+  --colore-acc1: #690031;
+  --colore-acc2: #864e00;
+}
+
+body {
+  font-family: "Squada One", sans-serif;
+  color: var(--colore-testo);
+}

@@ -13,7 +13,11 @@
         <a
           class="position-absolute bottom-0 ms-1 fs-3"
           (click)="addoRem(movie.id)"
-          [ngStyle]="{ color: isFavorite(movie.id) ? 'brown' : 'white' }"
+          [ngStyle]="{
+            color: isFavorite(movie.id)
+              ? 'var(--colore-acc1)'
+              : 'var(--colore-testo)'
+          }"
           ><i class="fas fa-heart"></i
         ></a>
       </div>

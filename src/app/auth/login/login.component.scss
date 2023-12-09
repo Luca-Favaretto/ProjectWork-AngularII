@@ -1,15 +1,17 @@
 :host {
   height: calc(100vh - 56px);
-  background-color: aqua;
+  background-color: var(--colore-background);
   display: flex;
   justify-content: center;
   align-items: center;
   > div {
-    background-color: beige;
+    background-color: var(--colore-div);
     padding: 1.5em;
     border-radius: 3px;
-    box-shadow: 2px 2px 3px 0px cadetblue;
+    box-shadow: 2px 2px 3px 0px var(--colore-button);
+    backdrop-filter: blur(8px);
     form {
+      width: 300px;
       > div {
         label {
           font-size: 0.9em;
@@ -19,12 +21,14 @@
         }
       }
       button {
-        background-color: blueviolet;
+        background-color: var(--colore-button);
+        color: var(--colore-testo);
         border: 0px;
       }
     }
     a {
       font-size: 0.7em;
+      color: #c0bcb5;
     }
   }
 }

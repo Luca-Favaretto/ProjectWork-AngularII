@@ -1,15 +1,15 @@
-div.card {
-  img {
-    height: 546px;
-    object-fit: cover;
+:host {
+  display: block;
+  background-color: var(--colore-background);
+  > div {
+    div.card {
+      img {
+        height: 546px;
+        object-fit: cover;
+      }
+      a {
+        color: var(--colore-testo);
+      }
+    }
   }
-  a {
-    color: white;
-  }
-}
-.red {
-  color: red;
-}
-.white {
-  color: white;
 }
