@@ -1,0 +1,30 @@
+:host {
+  height: calc(100vh - 56px);
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    background-color: beige;
+    padding: 1.5em;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px 0px cadetblue;
+    form {
+      > div {
+        label {
+          font-size: 0.9em;
+        }
+        input {
+          border-radius: 30px;
+        }
+      }
+      button {
+        background-color: blueviolet;
+        border: 0px;
+      }
+    }
+    a {
+      font-size: 0.7em;
+    }
+  }
+}
