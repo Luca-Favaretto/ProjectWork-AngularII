@@ -2,6 +2,9 @@
   display: block;
   background-color: var(--colore-background);
   > div {
+    h1 {
+      color: var(--colore-acc1);
+    }
     div.card {
       border: 0px;
       img {
@@ -10,6 +13,9 @@
       }
       a {
         color: var(--colore-testo);
+        i {
+          text-shadow: 0px 0px 2px white;
+        }
       }
     }
   }

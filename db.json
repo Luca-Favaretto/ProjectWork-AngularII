@@ -17,6 +17,12 @@
       "password": "$2a$10$uBaw0uUVJVUo.9hWvYVfG.uiTGpqWNj8LxJ3h1OHsrA8U.umVkuJa",
       "name": "alessia",
       "id": 4
+    },
+    {
+      "email": "marisaguglielmini@live.it",
+      "password": "$2a$10$Im5gOuusvv28ioB.gcH0OuE4znPcHZZaVV401nuz610a2teV1lx9e",
+      "name": "Marisa",
+      "id": 5
     }
   ],
   "favorites": [
@@ -56,34 +62,79 @@
       "id": 84
     },
     {
-      "movieId": 808023,
+      "movieId": 811367,
       "userId": 3,
-      "id": 87
+      "id": 97
+    },
+    {
+      "movieId": 632357,
+      "userId": 5,
+      "id": 98
+    },
+    {
+      "movieId": 717192,
+      "userId": 5,
+      "id": 99
+    },
+    {
+      "movieId": 804435,
+      "userId": 5,
+      "id": 100
+    },
+    {
+      "movieId": 791373,
+      "userId": 5,
+      "id": 101
+    },
+    {
+      "movieId": 399566,
+      "userId": 5,
+      "id": 102
+    },
+    {
+      "movieId": 811367,
+      "userId": 5,
+      "id": 103
+    },
+    {
+      "movieId": 578701,
+      "userId": 5,
+      "id": 104
+    },
+    {
+      "movieId": 808023,
+      "userId": 5,
+      "id": 105
+    },
+    {
+      "movieId": 527774,
+      "userId": 5,
+      "id": 106
     },
     {
       "movieId": 527774,
       "userId": 3,
-      "id": 88
-    },
-    {
-      "movieId": 717192,
-      "userId": 3,
-      "id": 94
+      "id": 113
     },
     {
       "movieId": 726684,
       "userId": 3,
-      "id": 95
+      "id": 114
     },
     {
       "movieId": 573680,
       "userId": 3,
-      "id": 96
+      "id": 115
     },
     {
-      "movieId": 811367,
+      "movieId": 808023,
       "userId": 3,
-      "id": 97
+      "id": 116
+    },
+    {
+      "movieId": 717192,
+      "userId": 3,
+      "id": 117
     }
   ],
   "movies-popular": [
