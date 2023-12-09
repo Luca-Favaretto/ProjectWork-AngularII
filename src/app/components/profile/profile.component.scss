@@ -11,6 +11,7 @@
     width: 20rem;
     height: 20rem;
     background-color: var(--colore-acc1);
+    filter: blur(4px);
     border-radius: 9999px;
     animation: relax 10s linear infinite reverse;
     display: flex;

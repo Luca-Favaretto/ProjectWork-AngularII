@@ -21,11 +21,6 @@
   ],
   "favorites": [
     {
-      "movieId": 586047,
-      "userId": 3,
-      "id": 10
-    },
-    {
       "movieId": 460465,
       "userId": 2,
       "id": 32
@@ -46,49 +41,49 @@
       "id": 50
     },
     {
-      "movieId": 804435,
-      "userId": 3,
-      "id": 58
-    },
-    {
-      "movieId": 615457,
-      "userId": 3,
-      "id": 71
-    },
-    {
-      "movieId": 460465,
-      "userId": 3,
-      "id": 72
-    },
-    {
-      "movieId": 632357,
-      "userId": 3,
-      "id": 74
-    },
-    {
-      "movieId": 399566,
-      "userId": 3,
-      "id": 76
-    },
-    {
-      "movieId": 573680,
-      "userId": 3,
-      "id": 79
-    },
-    {
-      "movieId": 567189,
-      "userId": 3,
-      "id": 80
-    },
-    {
       "movieId": 567189,
       "userId": 2,
       "id": 81
     },
     {
-      "movieId": 791373,
+      "movieId": 635302,
       "userId": 3,
-      "id": 82
+      "id": 83
+    },
+    {
+      "movieId": 813258,
+      "userId": 3,
+      "id": 84
+    },
+    {
+      "movieId": 808023,
+      "userId": 3,
+      "id": 87
+    },
+    {
+      "movieId": 527774,
+      "userId": 3,
+      "id": 88
+    },
+    {
+      "movieId": 717192,
+      "userId": 3,
+      "id": 94
+    },
+    {
+      "movieId": 726684,
+      "userId": 3,
+      "id": 95
+    },
+    {
+      "movieId": 573680,
+      "userId": 3,
+      "id": 96
+    },
+    {
+      "movieId": 811367,
+      "userId": 3,
+      "id": 97
     }
   ],
   "movies-popular": [
