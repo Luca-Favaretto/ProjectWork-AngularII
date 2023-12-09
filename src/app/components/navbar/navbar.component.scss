@@ -3,6 +3,10 @@
     background-color: var(--colore-navbar);
     nav {
       height: 62px;
+      div#navbarNav {
+        background-color: var(--colore-navbar);
+        padding-left: 10px;
+      }
       li {
         font-size: 1.2em;
         a {
