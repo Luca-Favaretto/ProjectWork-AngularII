@@ -16,3 +16,36 @@ body {
   font-family: "Squada One", sans-serif;
   color: var(--colore-testo);
 }
+/* Per i browser WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Larghezza della scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(
+    --colore-button
+  ); /* Colore della parte "thumb" (il pulsante trascinabile) */
+  border-radius: 10px; /* Bordo arrotondato della parte "thumb" */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(
+    --colore-background
+  ); /* Colore della parte "track" (la parte fissa) */
+}
+
+/* Per i browser Firefox */
+/* Nota: Al momento, Firefox non supporta la personalizzazione avanzata della scrollbar tramite CSS */
+/* Questo stile è un fallback generico */
+::-moz-scrollbar {
+  width: 5px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: var(--colore-button);
+  border-radius: 10px;
+}
+
+::-moz-scrollbar-track {
+  background-color: var(--colore-background);
+}
